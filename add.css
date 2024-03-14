@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+html,body{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background:#1abc9c;
+}
+.wrapper{
+    
+    width: 32vw;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width:400px;
+}
+.wrapper .title{
+    line-height: 90px;
+    background:#16a085 ;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+.wrapper form{
+    padding: 30px 20px 25px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.wrapper form .row{
+    height:45px;
+    background: #fff;
+    margin-bottom:15px ;
+    position:relative
+}
+.error{
+    color: red;
+}
+.wrapper form span{
+    display: block;
+}
+.wrapper form .form-control input{
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.wrapper form .form-control input:focus{
+    border-color: #16a085;
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+input[type="text"],input[type="number"],input[type="email"]{
+    padding: 10px 20px;
+    width: 100%;
+}
+input[type="date"]{
+    padding:10px 44px;
+}
+@media screen and (max-width:576px){
+    input[type="date"]{
+        padding: 10px 20px;
+    }
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    margin-bottom: 16px;
+        width: auto;
+}
+.form-control label{
+    margin-bottom: 6px;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+label[for="terms"]{
+    margin-left: 30px;
+}
+button[type="submit"]{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 0%;
+    background-color: #16a085 !important;
+    border: 1px solid  #16a085;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+}
